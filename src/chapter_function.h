@@ -8,5 +8,7 @@ int infiniteLoop(void);
 void displayOnes(int, int);
 void declarationAndUsage(void);
 void enterAndReturn(void);
+void cString(void);
+int countOnesInBin(int n);
 
 #endif // !CHAPTER_FUNCTION

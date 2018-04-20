@@ -111,3 +111,27 @@ void enterAndReturn(){
     std::cout << std::endl;
     std::cout << arr;
 }
+
+void cString(void) {
+    // C string tuto
+    char str[6] = { 'G', 'W', 'E', 'N', 'T', '\0'};
+    std::cout << str << std::endl;
+}
+
+
+int countOnesInBin(int n){
+    int count = 0;
+    int tmp = n;
+    while(1) {
+        tmp = tmp & (tmp-1);
+        count++;
+        if(tmp == 0) break;
+    }
+    std::cout << "Number of Ones in binary writing "
+        << n
+        << " is "
+        << count
+        << std::endl;
+
+    return count;
+};

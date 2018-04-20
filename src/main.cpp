@@ -2,8 +2,6 @@
 #include "chapter_function.h"
 #include "min_max.h"
 
-void cString(void);
-
 int main()
 {
 
@@ -29,12 +27,11 @@ int main()
     // minMaxAlgo(&min, &max);
     // std::cout << "Min number is : " << min << std::endl;
     // std::cout << "Max number is : " << max << std::endl;
-    cString();
+    // cString();
+    countOnesInBin(7);
+    countOnesInBin(8);
+    countOnesInBin(256);
+    countOnesInBin(512);
+    countOnesInBin(1023);
     return 0;
-}
-
-void cString(void) {
-    // C string tuto
-    char str[6] = { 'G', 'W', 'E', 'N', 'T', '\0'};
-    std::cout << str << std::endl;
 }
