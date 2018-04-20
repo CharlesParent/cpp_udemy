@@ -2,6 +2,8 @@
 #include "chapter_function.h"
 #include "min_max.h"
 
+void lambdaExamples(void);
+
 int main()
 {
 
@@ -30,8 +32,17 @@ int main()
     // cString();
     countOnesInBin(7);
     countOnesInBin(8);
-    countOnesInBin(256);
-    countOnesInBin(512);
     countOnesInBin(1023);
+    lambdaExamples();
     return 0;
+}
+
+void lambdaExamples(void) {
+    // []  (param) --> RETURN_TYPE {
+    //     BODY
+    // }
+    auto lambda1 = [] (int x) -> int { return x*x*x; };
+
+    std::cout << lambda1(10) << std::endl;
+    std::cout << lambda1(2) << std::endl;
 }
