@@ -1,6 +1,7 @@
 #include <iostream>
 #include "chapter_function.h"
 #include "min_max.h"
+#include "exceptions.h"
 
 void lambdaExamples(void);
 
@@ -30,11 +31,11 @@ int main()
     // std::cout << "Min number is : " << min << std::endl;
     // std::cout << "Max number is : " << max << std::endl;
     // cString();
-    countOnesInBin(7);
-    countOnesInBin(8);
-    countOnesInBin(1023);
-    lambdaExamples();
-    return 0;
+    // countOnesInBin(7);
+    // countOnesInBin(8);
+    // countOnesInBin(1023);
+    // lambdaExamples();
+    return exceptionTest();
 }
 
 void lambdaExamples(void) {
