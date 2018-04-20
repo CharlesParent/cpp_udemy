@@ -1,5 +1,6 @@
 #include <iostream>
 #include "chapter_function.h"
+#include "min_max.h"
 
 int main()
 {
@@ -20,8 +21,11 @@ int main()
     // displayOnes(2, 7);
 
     // declarationAndUsage();
-
-    enterAndReturn();
+    //enterAndReturn();
+    int min, max;
+    minMaxAlgo(&min, &max);
+    std::cout << "Min number is : " << min << std::endl;
+    std::cout << "Max number is : " << max << std::endl;
 
     return 0;
 }
