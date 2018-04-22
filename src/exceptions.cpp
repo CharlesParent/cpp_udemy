@@ -82,3 +82,36 @@ void stdexcept(void) {
     }
 
 }
+
+void nestedTryCatch() {
+    try {
+        //some code
+        try
+        {
+            // some other code
+        }
+        catch (...)
+        {
+
+        }
+    }
+    catch (...)
+    {
+
+    }
+}
+
+// Exception propagation
+void exceptionPropag()
+{
+    try
+    {
+        // Some code
+    }
+    catch(std::exception x)
+    {
+        // Propagation
+        // Code to free space ;)
+        throw;
+    }
+}
