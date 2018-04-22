@@ -4,7 +4,7 @@
 #include <stdexcept>
 
 static double Sqrt(double);
-void some(int);
+static void some(int);
 
 int exceptionTest(void){
     double square_root = 0;
@@ -46,7 +46,7 @@ static double Sqrt(double x){
     return std::pow(x, 0.5);
 }
 
-void some(int n){
+static void some(int n){
     if(n == 0)
         throw 1;
     if(n > 0 && n < 100)
@@ -72,5 +72,13 @@ void stdexcept(void) {
     // catch( std::range_error re) {
     //     std::cout << "Error: " << rc.what();
     // }
+
+    // Generic catch block : catch all blocks
+    try {
+        some(1);
+    }
+    catch(...) {
+      std::cout << "Error" << std::endl;
+    }
 
 }

@@ -35,7 +35,9 @@ int main()
     // countOnesInBin(8);
     // countOnesInBin(1023);
     // lambdaExamples();
-    return exceptionTest();
+    // exceptionTest();
+    stdexcept();
+    return 0;
 }
 
 void lambdaExamples(void) {
