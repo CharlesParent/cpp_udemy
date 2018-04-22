@@ -56,3 +56,21 @@ void some(int n){
     if(n < 0)
         throw std::domain_error("Standard Exception");
 }
+
+void stdexcept(void) {
+    // .what: prints out the exception message
+    // STD Exceptions
+    // std::logic_error
+    // std::domain_error
+    // std::invalid_argument
+    // std:length_errr
+    // std::out_of _range
+    // std::range_error
+    // std::overflow_error
+    // std::underflow_error
+
+    // catch( std::range_error re) {
+    //     std::cout << "Error: " << rc.what();
+    // }
+
+}
