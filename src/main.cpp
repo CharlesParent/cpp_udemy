@@ -2,6 +2,7 @@
 #include "chapter_function.h"
 #include "min_max.h"
 #include "exceptions.h"
+#include "structures.h"
 
 void lambdaExamples(void);
 
@@ -36,7 +37,10 @@ int main()
     // countOnesInBin(1023);
     // lambdaExamples();
     // exceptionTest();
-    stdexcept();
+    // stdexcept();
+
+    // STRUCTURES
+    structures();
     return 0;
 }
 
