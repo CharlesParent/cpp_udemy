@@ -40,7 +40,8 @@ int main()
     // stdexcept();
 
     // STRUCTURES
-    structures();
+    // structures();
+    books();
     return 0;
 }
 
