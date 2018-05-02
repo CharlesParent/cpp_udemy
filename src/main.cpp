@@ -3,6 +3,7 @@
 #include "min_max.h"
 #include "exceptions.h"
 #include "structures.h"
+#include "generic.h"
 
 void lambdaExamples(void);
 
@@ -41,7 +42,10 @@ int main()
 
     // STRUCTURES
     // structures();
-    books();
+    //books();
+
+    // GENERIC PROGRAMMING
+    generic();
     return 0;
 }
 
