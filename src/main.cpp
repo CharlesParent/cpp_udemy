@@ -49,7 +49,8 @@ int main()
     //generic();
 
     // STANDARD LIB
-    vectors();
+    //vectors();
+    deque();
     return 0;
 }
 
