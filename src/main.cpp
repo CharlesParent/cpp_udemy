@@ -4,6 +4,7 @@
 #include "exceptions.h"
 #include "structures.h"
 #include "generic.h"
+#include "stl.h"
 
 void lambdaExamples(void);
 
@@ -45,7 +46,10 @@ int main()
     //books();
 
     // GENERIC PROGRAMMING
-    generic();
+    //generic();
+
+    // STANDARD LIB
+    vectors();
     return 0;
 }
 
