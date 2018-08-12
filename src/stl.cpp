@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <deque>
+#include <string>
 
 void vectors(void) {
     // Very similar to array, more expensive regarding system resources
@@ -97,4 +98,22 @@ void deque(void) {
     // dq5.pop_back delete the last element
     // dq5.push_front add element at the beginning
 
+}
+
+void string(void) {
+    std::string str1 = "Hey";
+    str1.push_back('t');
+    std::cout << str1 << std::endl;
+    std::cout << str1.size() << std::endl;
+    for(char c : str1){
+        if(c == 'e')
+            continue;
+        std::cout << c;
+    }
+    std::cout << str1.at(1);
+    std::cout << std::endl;
+
+    std::string str2;
+    std::getline(std::cin, str2);
+    std::cout << str2 << std::endl;
 }
