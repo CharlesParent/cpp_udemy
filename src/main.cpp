@@ -50,8 +50,9 @@ int main()
 
     // STANDARD LIB
     //vectors();
-    // deque();
-    string();
+    //deque();
+    //string();
+    map();
     return 0;
 }
 

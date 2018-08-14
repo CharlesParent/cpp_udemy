@@ -3,6 +3,7 @@
 #include <vector>
 #include <deque>
 #include <string>
+#include <map>
 
 void vectors(void) {
     // Very similar to array, more expensive regarding system resources
@@ -116,4 +117,20 @@ void string(void) {
     std::string str2;
     std::getline(std::cin, str2);
     std::cout << str2 << std::endl;
+}
+
+void map(void) {
+    std::map<int, std::string> numbers;
+     numbers[0] = "Zero";
+     numbers[1] = "One";
+     numbers[2] = "Two";
+
+     std::cout << numbers.at(0) << std::endl;
+     std::cout << numbers.size() << std::endl;
+
+     auto it = numbers.find(1);
+     if(it == numbers.end())
+        std::cout << "Key not found" << std::endl;
+    else
+        std::cout << "Key found!" << std::endl;
 }
