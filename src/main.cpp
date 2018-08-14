@@ -5,6 +5,7 @@
 #include "structures.h"
 #include "generic.h"
 #include "stl.h"
+#include "function.h"
 
 void lambdaExamples(void);
 
@@ -52,7 +53,10 @@ int main()
     //vectors();
     //deque();
     //string();
-    map();
+    //map();
+
+    // FUNCTIONS
+    function();
     return 0;
 }
 
