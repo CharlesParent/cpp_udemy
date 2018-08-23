@@ -9,6 +9,42 @@
 
 void lambdaExamples(void);
 
+class Date {
+    int day;
+    int month;
+    int year;
+
+    public:
+        // Parameters are initalized
+        Date() : day(1), month(1), year(2019) {
+            std::cout << "Hello! Constuctore" << std::endl;
+        }
+        Date(int d, int m, int y) : day(d), month(m), year(y) {
+            std::cout << "Hello! Constuctor 2" << std::endl;
+        }
+
+        void setDate(int d, int m, int y) {
+            setDay(d);
+            setMonth(m);
+            setYear(y);
+        }
+        // Const : this method will not change the instance of the class
+        void printDate() const {
+            std::cout << this->month << "/" 
+                << this->day << "/"
+                << this->year << std::endl;
+        }
+
+        int getDay() const {return this->day;}
+        int getMonth() const {return this->month;}
+        int getYear() const {return this->year;}
+
+        void setDay(int d) {this->day = d;}
+        void setMonth(int m) {this->month = m;}
+        void setYear(int y) {this->year = y;}
+
+};
+
 int main()
 {
 
@@ -56,7 +92,26 @@ int main()
     //map();
 
     // FUNCTIONS
-    function();
+    //function();
+
+    Date dt;
+    dt.setDate(9, 2, 1994);
+    dt.printDate();
+    int m, d, y;
+
+    std::cout << "Enter date: ";
+    std::cin >> m >> d >> y;
+
+    Date dt1;
+    dt1.printDate();
+    dt1.setDate(d,m,y);
+    std::cout << "Entered date: ";
+
+    dt1.printDate();
+    std::cout << "Month : " << dt1.getMonth() << std::endl;
+
+    Date dt2(10,6,2018);
+    dt2.printDate();
     return 0;
 }
 
