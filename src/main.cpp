@@ -6,53 +6,9 @@
 #include "generic.h"
 #include "stl.h"
 #include "function.h"
+#include "Date.h"
 
 void lambdaExamples(void);
-
-class Date {
-    int day;
-    int month;
-    int year;
-
-    public:
-        // Parameters are initalized
-        Date() : day(1), month(1), year(2019) {
-            std::cout << "Hello! Constuctore" << std::endl;
-        }
-        Date(int d, int m, int y) : day(d), month(m), year(y) {
-            std::cout << "Hello! Constuctor 2" << std::endl;
-        }
-        // Destructor: only one
-        ~Date(){
-            std::cout << "Destructor has been called" << std::endl;
-        }
-
-        void setDate(int d, int m, int y) {
-            setDay(d);
-            setMonth(m);
-            setYear(y);
-        }
-        // Const : this method will not change the instance of the class
-        void printDate() const {
-            std::cout << this->month << "/" 
-                << this->day << "/"
-                << this->year << std::endl;
-        }
-
-        //Friend function
-        friend int addDay(Date d1, Date d2){
-            return d1.day + d2.day;
-        }
-
-        int getDay() const {return this->day;}
-        int getMonth() const {return this->month;}
-        int getYear() const {return this->year;}
-
-        void setDay(int d) {this->day = d;}
-        void setMonth(int m) {this->month = m;}
-        void setYear(int y) {this->year = y;}
-
-};
 
 // Generic class
 template <typename TYPE>
@@ -115,7 +71,7 @@ int main()
     // FUNCTIONS
     //function();
 
-    /*Date dt;
+    Date dt;
     dt.setDate(9, 2, 1994);
     dt.printDate();
     int m, d, y;
@@ -134,7 +90,7 @@ int main()
     dt2.printDate();
 
     int res = addDay(dt1, dt2);
-    std::cout << res << std::endl;*/
+    std::cout << res << std::endl;
 
     testGeneric<int> testInt(10);
     testGeneric<double> testDouble(10.99);
