@@ -22,6 +22,10 @@ class Date {
         Date(int d, int m, int y) : day(d), month(m), year(y) {
             std::cout << "Hello! Constuctor 2" << std::endl;
         }
+        // Destructor: only one
+        ~Date(){
+            std::cout << "Destructor has been called" << std::endl;
+        }
 
         void setDate(int d, int m, int y) {
             setDay(d);
@@ -109,9 +113,10 @@ int main()
 
     dt1.printDate();
     std::cout << "Month : " << dt1.getMonth() << std::endl;
-
-    Date dt2(10,6,2018);
-    dt2.printDate();
+    if (1) {
+        Date dt2(10,6,2018);
+        dt2.printDate();
+    }
     return 0;
 }
 
