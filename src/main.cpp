@@ -54,6 +54,18 @@ class Date {
 
 };
 
+// Generic class
+template <typename TYPE>
+class testGeneric{
+    TYPE attribute;
+
+    public:
+        testGeneric(TYPE param) : attribute(param){}
+
+        TYPE getAttribute() const {return this->attribute;}
+        void setAttribute(TYPE a) { this->attribute = a;}
+};
+
 int main()
 {
 
@@ -103,7 +115,7 @@ int main()
     // FUNCTIONS
     //function();
 
-    Date dt;
+    /*Date dt;
     dt.setDate(9, 2, 1994);
     dt.printDate();
     int m, d, y;
@@ -122,7 +134,14 @@ int main()
     dt2.printDate();
 
     int res = addDay(dt1, dt2);
-    std::cout << res << std::endl;
+    std::cout << res << std::endl;*/
+
+    testGeneric<int> testInt(10);
+    testGeneric<double> testDouble(10.99);
+    testGeneric<char> testChar('E');
+    std::cout << testChar.getAttribute() << std::endl;
+    testChar.setAttribute('P');
+    std::cout << testChar.getAttribute() << std::endl;
     return 0;
 }
 
