@@ -39,6 +39,11 @@ class Date {
                 << this->year << std::endl;
         }
 
+        //Friend function
+        friend int addDay(Date d1, Date d2){
+            return d1.day + d2.day;
+        }
+
         int getDay() const {return this->day;}
         int getMonth() const {return this->month;}
         int getYear() const {return this->year;}
@@ -113,10 +118,11 @@ int main()
 
     dt1.printDate();
     std::cout << "Month : " << dt1.getMonth() << std::endl;
-    if (1) {
-        Date dt2(10,6,2018);
-        dt2.printDate();
-    }
+    Date dt2(10,6,2018);
+    dt2.printDate();
+
+    int res = addDay(dt1, dt2);
+    std::cout << res << std::endl;
     return 0;
 }
 
