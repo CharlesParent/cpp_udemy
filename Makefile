@@ -1,5 +1,5 @@
 CXX= g++
-CPPFLAGS= -Wall -Werror -g -O2 -std=c++11
+CPPFLAGS= -Wall -Werror -g -O2 -std=c++11 -Iinclude
 LDLIBS= -lm
 
 EXE= bin/project
