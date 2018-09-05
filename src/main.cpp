@@ -7,6 +7,7 @@
 #include "stl.h"
 #include "function.h"
 #include "Date.h"
+#include "file.h"
 
 void lambdaExamples(void);
 
@@ -71,7 +72,8 @@ int main()
     // FUNCTIONS
     //function();
 
-    Date dt;
+    // OOP
+    /*Date dt;
     dt.setDate(9, 2, 1994);
     dt.printDate();
     int m, d, y;
@@ -98,6 +100,9 @@ int main()
     std::cout << testChar.getAttribute() << std::endl;
     testChar.setAttribute('P');
     std::cout << testChar.getAttribute() << std::endl;
+    */
+
+    file();
     return 0;
 }
 

@@ -3,7 +3,7 @@ CPPFLAGS= -Wall -Werror -g -O2 -std=c++11 -Iinclude
 LDLIBS= -lm
 
 EXE= bin/project
-OBJS= build/main.o build/chapter_function.o build/min_max.o build/exceptions.o build/structures.o build/generic.o build/stl.o build/function.o build/Date.o
+OBJS= build/main.o build/chapter_function.o build/min_max.o build/exceptions.o build/structures.o build/generic.o build/stl.o build/function.o build/Date.o build/file.o
 
 build/%.o : src/%.cpp
 	$(CXX) $(CPPFLAGS) -c $^ -o $@
